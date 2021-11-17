@@ -23,11 +23,11 @@ export default function AppPreview({mode, time}) {
           <div className="app-name">eCommerce</div>
           <div className="header-links">
             <div className="cart">
-              <img src="/bag.webp" alt="cart" />
+              <img src="https://bretlittle.com/bag.webp" alt="cart" />
               {headerLoaded && <span>2</span>}
             </div>
             <div className="profile">
-              <img src="/profile.webp" alt="cart" />
+              <img src="https://bretlittle.com/profile.webp" alt="cart" />
             </div>
           </div>
         </section>
@@ -38,7 +38,7 @@ export default function AppPreview({mode, time}) {
             <div>
               {productDetailsLoaded ? (
                 <img
-                  src="/shirt.webp"
+                  src="https://bretlittle.com/shirt.webp"
                   className="main-image"
                   alt="Main shirt"
                 />
@@ -96,21 +96,21 @@ export default function AppPreview({mode, time}) {
             <section>
               <div className="image">
                 {recommendationsLoaded ? (
-                  <img src="/shirt.webp" alt="Recommendation 1" />
+                  <img src="https://bretlittle.com/shirt.webp" alt="Recommendation 1" />
                 ) : (
                   <div />
                 )}
               </div>
               <div className="image">
                 {recommendationsLoaded ? (
-                  <img src="/shirt.webp" alt="Recommendation 2" />
+                  <img src="https://bretlittle.com/shirt.webp" alt="Recommendation 2" />
                 ) : (
                   <div />
                 )}
               </div>
               <div className="image">
                 {recommendationsLoaded ? (
-                  <img src="/shirt.webp" alt="Recommendation 3" />
+                  <img src="https://bretlittle.com/shirt.webp" alt="Recommendation 3" />
                 ) : (
                   <div />
                 )}
