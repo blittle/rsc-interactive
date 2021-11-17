@@ -1,5 +1,6 @@
 {
   "name": "rsc-interactive2",
+  "main": "dist/worker/worker.js",
   "description": "This is a dev environment for Hydrogen",
   "version": "0.6.4",
   "license": "MIT",
@@ -31,6 +32,7 @@
     "vite": "^2.6.14"
   },
   "dependencies": {
+    "@cloudflare/kv-asset-handler": "0.2.0",
     "use-animation-frame": "^0.1.1",
     "@headlessui/react": "^1.4.1",
     "@shopify/hydrogen": "^0.6.4",
