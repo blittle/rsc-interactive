@@ -8,7 +8,9 @@ export function BrowserShell({children}) {
           <div className="control expand"></div>
         </div>
       </div>
-      {children}
+      <div className="preview-wrapper">
+        {children}
+      </div>
     </div>
   );
 }

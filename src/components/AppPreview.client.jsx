@@ -14,7 +14,7 @@ export default function AppPreview({mode, time}) {
     recommendationsHidden,
   } = getStateForStage(currentResourceStage);
 
-  if (blank) return <BrowserShell />;
+  if (blank) return <BrowserShell></BrowserShell>;
 
   return (
     <BrowserShell>
@@ -51,18 +51,18 @@ export default function AppPreview({mode, time}) {
                 <h1>Basic t-shirt</h1>
               ) : (
                 <TextLoading
-                  height="26"
+                  height="32"
                   width="200"
-                  style={{margin: '.83rem 0'}}
+                  style={{margin: '1rem 0'}}
                 />
               )}
               {productDetailsLoaded ? (
                 <h2>$11.99</h2>
               ) : (
                 <TextLoading
-                  height="26"
+                  height="32"
                   width="80"
-                  style={{margin: '.83rem 0'}}
+                  style={{margin: '1rem 0'}}
                 />
               )}
               {productDetailsLoaded ? (
@@ -75,7 +75,7 @@ export default function AppPreview({mode, time}) {
                 <TextLoading
                   height="110"
                   width="200"
-                  style={{margin: '1rem 0'}}
+                  style={{margin: '1.1rem 0'}}
                 />
               )}
 
@@ -96,21 +96,30 @@ export default function AppPreview({mode, time}) {
             <section>
               <div className="image">
                 {recommendationsLoaded ? (
-                  <img src="https://bretlittle.com/shirt.webp" alt="Recommendation 1" />
+                  <img
+                    src="https://bretlittle.com/shirt.webp"
+                    alt="Recommendation 1"
+                  />
                 ) : (
                   <div />
                 )}
               </div>
               <div className="image">
                 {recommendationsLoaded ? (
-                  <img src="https://bretlittle.com/shirt.webp" alt="Recommendation 2" />
+                  <img
+                    src="https://bretlittle.com/shirt.webp"
+                    alt="Recommendation 2"
+                  />
                 ) : (
                   <div />
                 )}
               </div>
               <div className="image">
                 {recommendationsLoaded ? (
-                  <img src="https://bretlittle.com/shirt.webp" alt="Recommendation 3" />
+                  <img
+                    src="https://bretlittle.com/shirt.webp"
+                    alt="Recommendation 3"
+                  />
                 ) : (
                   <div />
                 )}

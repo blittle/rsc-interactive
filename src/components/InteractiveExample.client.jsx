@@ -11,14 +11,10 @@ export default function InteractiveExample({mode}) {
 
   return (
     <>
-      <div style={{display: 'flex'}}>
-        <div style={{marginRight: 10}}>
-          <h2>{mode.name}</h2>
-          <p style={{width: 500}}>{mode.description}</p>
-          <Timeline mode={mode} time={time} setTime={setTime} />
-        </div>
-        <div>
+      <div className="interactive-example">
+        <div style={{padding: '0 10px', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
           <AppPreview mode={mode} time={time} />
+          <Timeline mode={mode} time={time} setTime={setTime} />
         </div>
       </div>
     </>
