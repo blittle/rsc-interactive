@@ -14,7 +14,8 @@
     "build:client": "vite build --outDir dist/client --manifest",
     "build:server": "vite build --outDir dist/server --ssr src/entry-server.jsx",
     "build:worker": "WORKER=true vite build --outDir dist/worker --ssr worker.js",
-    "serve": "node --enable-source-maps server"
+    "serve": "node --enable-source-maps server",
+    "deploy": "wrangler publish"
   },
   "prettier": "@shopify/prettier-config",
   "devDependencies": {
